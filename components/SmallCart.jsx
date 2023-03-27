@@ -10,7 +10,7 @@ const SmallCart = ({ cart, close }) => {
   return (
     <div className={styles.smallCartOverlay} onClick={close}>
       <div className={styles.smallCart} onClick={stopPropagation}>
-        {cart.map((item) => (
+        {cart && cart.map((item) => (
           <div key={item.id} className={styles.item}>
             <img src={item.imageUrl} alt={item.title} className={styles.image} />
             <div className={styles.details}>
