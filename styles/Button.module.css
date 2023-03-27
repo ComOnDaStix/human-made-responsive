@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  .button {
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+     transform: scale(1.05);
+    transition: transform 0.2s ease;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      margin-top: 10%;
+    }
+  }

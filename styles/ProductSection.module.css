@@ -1,0 +1,37 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.productContainer {
+    margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ gap: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: black
+}
+
+.card {
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .productContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productContainer {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+

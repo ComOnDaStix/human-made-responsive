@@ -1,0 +1,290 @@
+.container {
+    height: 100px;
+}
+
+.itemsContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    align-items: center;
+}
+
+.itemsContainer {
+    align-items: center;
+}
+
+.langSwitch {
+    padding-left: 32px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.menu {
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.shop {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.icon {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.search {
+    cursor: pointer;
+}
+
+.icon:hover,
+.search:hover,
+.shop:hover,
+.menu:hover,
+.logo:hover {
+    transform: scale(1.2);
+    transition: transform 0.1s ease;
+}
+
+.cart {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .cartCount {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+  }
+
+  .slideMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: white;
+    width: 75%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    z-index: 1001;
+    margin-bottom: 30px;
+  }
+  
+  .slideMenu.open {
+    transform: translateX(0);
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .openMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    padding-bottom: 30px;
+  }
+  
+
+ 
+
+ .listItems {
+  margin-top: 5%;
+ }
+
+ .listItem {
+  margin-top: 8%;
+ }
+
+ .listItem2 {
+  margin-top: 15%;
+ }
+
+ .listItem3 {
+  margin-top: 15%;
+ }
+
+
+  
+  .link {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+  }
+
+  .ul {
+   padding: 0;
+  }
+  
+  .menuTitle {
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+
+  .menuTitle2 {
+    margin-top: 15%;
+  }
+  
+  .menuSection {
+    margin-bottom: 20px;
+  }
+
+.menuSectionLast {
+  margin-top: 8%;
+}
+
+.searchSlideMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: white;
+  z-index: 1001;
+  overflow-y: auto;
+  transition: height 0.3s ease-in-out;
+}
+
+.searchOpen {
+  height: 15%;
+}
+
+.searchCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.searchInput {
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+  width: 70%;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 200px;
+  cursor: pointer;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 100px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 1509px) {
+  .searchIcon {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .itemsContainer {
+    justify-content: center;
+  }
+
+  .searchIcon {
+    display: none;
+  }
+
+  .closeIcon {
+    margin-left: 20%;
+  }
+
+  .items:nth-child(1) {
+    order: -1;
+    margin-right: auto;
+  }
+
+  .logo {
+    order: 0;
+    margin-right: 10px;
+  }
+
+  .icon {
+    padding: 0;
+  }
+
+  .items:nth-child(3) {
+    order: 1;
+    margin-left: auto;
+  }
+
+  .langSwitch {
+      padding-left: 8px;
+  }
+
+  .search {
+      margin-left: 10px;
+  }
+
+  .shop {
+      margin-left: 10px;
+  }
+
+  .menu {
+      margin-left: 10px;
+  }
+}

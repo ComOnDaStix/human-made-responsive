@@ -1,0 +1,43 @@
+.wrapper {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.subFooterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.footerIcons {
+  justify-content: center;
+  margin-top: 4%;
+  align-items: center;
+  display: flex;
+  gap: 40%;
+}
+
+.footerIcon {
+  cursor: pointer;
+}
+.footerIcon:hover {
+  transform: scale(1.2);
+  transition: transform 0.1s ease;
+}
+
+.copyRights {
+  margin-top: 4%;
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .subFooterContainer {
+    margin-top: 4%;
+    margin-bottom: 10%;
+  }
+}

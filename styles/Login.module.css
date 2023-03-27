@@ -1,0 +1,117 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 0.9s ease-in-out forwards;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  width: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.h1 {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 5%;
+  font-weight: 100;
+}
+
+.loginButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding: 15px 25px;
+  background-color: black;
+  color: white;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  max-width: 500px; /* Change this to max-width to make it responsive */
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.h1 {
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 5%;
+  font-weight: 100;
+}
+
+.loginButton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 150px; /* Change this to max-width and adjust the value to make it responsive */
+  padding: 15px 25px;
+  background-color: black;
+  color: white;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    margin-top: 4%;
+    margin-left: 4%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .formItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Add width: 100% to .formContainer */
+  .formContainer {
+    width: 100%;
+  }
+}
+
+

@@ -1,0 +1,171 @@
+.cartContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 5%;
+  align-items: none;
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: fadeIn 1s ease-in-out forwards; /* Apply fadeIn animation */
+}
+
+.cartHeader,
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0;
+  width: 70%;
+}
+
+.itemImage {
+  border: 1px solid #ccc;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.itemDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 12%;
+  text-align: center;
+}
+
+.quantityControl {
+  justify-content: center;
+
+  width: 90px;
+  display: flex;
+  gap: 0.5rem;
+  border: 1px solid;
+  padding: 5px;
+}
+
+.continueShoppingButton {
+  display: none;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.subtotal {
+  margin-left: 1rem;
+}
+
+.h1 {
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  margin-bottom: 3%;
+}
+
+.button {
+  border: none;
+  background-color: white;
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+.totalCost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 65%;
+  margin-bottom: 1rem;
+}
+
+.checkoutButton {
+  
+  padding: 15px 50px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  margin-left: 20%;
+  letter-spacing: 2px;
+}
+
+.checkoutButton:hover {
+  background-color: #333;
+}
+
+.total {
+  margin-right: 4px;
+  font-weight: 200;
+}
+
+.cost {
+  font-weight: 200;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartContainer {
+    width: 90%;
+    margin-left: 6.0%;
+  }
+
+  .continueShoppingButton {
+    display: block;
+  }
+
+  .cartHeader,
+.cartItem {
+  display: flex;
+  flex-direction: column; /* Change to column direction */
+  align-items: center; /* Center elements */
+  gap: 1rem; /* Add gap between elements */
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0;
+  width: 70%;
+  margin-left: 20;
+}
+
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+}
+ 
+
+  .quantity {
+    display: none;
+  }
+
+  .itemDetails {
+    width: auto;
+  }
+
+  .subtotal,
+  .totalCost {
+    margin-left: 0;
+  }
+
+  .checkoutButton {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 5%;
+  }
+}
