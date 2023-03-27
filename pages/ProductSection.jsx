@@ -22,7 +22,7 @@ const ProductSection = ({ items }) => {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.productContainer}>
-        {items.map((product) => (
+        {items?.map((product) => (
           <div
             key={product.id}
             className={styles.link}
