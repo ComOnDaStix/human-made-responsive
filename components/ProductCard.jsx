@@ -9,8 +9,8 @@ const ProductCard = ({ product }) => {
         <Image
           className={styles.ProductImage} 
           src={product.imageUrl}
-          width={320}
-          height={320}
+          width={417}
+          height={417}
           alt="img"
         />
         <div className={styles.ImageOverlay}></div>
