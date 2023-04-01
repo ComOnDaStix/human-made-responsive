@@ -55,6 +55,12 @@
     flex-direction: column;
     width: 100%;
   }
+
+  .ImageWrapper {
+    flex-direction: column;
+    display: flex;
+   max-width: 100%;
+  }
  
 }
   
