@@ -21,16 +21,17 @@
   cursor: pointer;
 }
 
+
 @media (max-width: 1024px) {
   .productContainer {
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
     gap: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .productContainer {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 10px;
   }
 }
@@ -41,10 +42,10 @@
     flex-direction: column;
     align-items: center;
   }
-  .mainContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
+.ProductImage {
+  width: 100%; 
+  object-fit: cover;
+  border-radius: 5px;
+}
