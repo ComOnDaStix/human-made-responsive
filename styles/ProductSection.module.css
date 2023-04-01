@@ -45,11 +45,15 @@
   }
 
   .productContainer {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
 }
 
 .ProductImage {
+  display: flex;
+  flex-direction: column;
   width: 100%; 
   object-fit: cover;
   border-radius: 5px;
