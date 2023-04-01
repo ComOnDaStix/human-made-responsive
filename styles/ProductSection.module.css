@@ -56,10 +56,17 @@
     flex-direction: column;
     align-items: center;
   }
+  .productContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .ProductImage {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
 }
 
-.ProductImage {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 5px;
-}
